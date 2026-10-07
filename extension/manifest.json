@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Position",
+  "version": "0.1.0",
+  "minimum_chrome_version": "102",
+  "description": "Move the active tab to positions 1–10 using custom keyboard shortcuts. Optionally swap with the destination tab.",
+  "permissions": ["storage"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_title": "Tab Position settings" },
+  "options_ui": { "page": "options.html", "open_in_tab": true },
+  "icons": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" },
+  "commands": {
+    "move-to-1": { "description": "Move active tab to position 1" },
+    "move-to-2": { "description": "Move active tab to position 2" },
+    "move-to-3": { "description": "Move active tab to position 3" },
+    "move-to-4": { "description": "Move active tab to position 4" },
+    "move-to-5": { "description": "Move active tab to position 5" },
+    "move-to-6": { "description": "Move active tab to position 6" },
+    "move-to-7": { "description": "Move active tab to position 7" },
+    "move-to-8": { "description": "Move active tab to position 8" },
+    "move-to-9": { "description": "Move active tab to position 9" },
+    "move-to-10": { "description": "Move active tab to position 10 (use the 0 key)" }
+  }
+}

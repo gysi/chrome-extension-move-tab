@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tab Position settings</title>
+    <link rel="stylesheet" href="options.css">
+    <script src="options.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <img src="icons/48.png" alt="" width="48" height="48">
+      <h1>Tab Position</h1>
+      <p>Move your active tab to a numbered position with a keyboard shortcut.</p>
+      <section aria-labelledby="behavior">
+        <h2 id="behavior">Tab behavior</h2>
+        <label class="toggle"><input id="swap" type="checkbox" role="switch" disabled> Swap with the destination tab</label>
+        <p>Off: insert your tab and shift the tabs in between. On: exchange the two tabs, leaving the others in place.</p>
+        <p id="status" role="status" aria-live="polite"></p>
+      </section>
+      <section aria-labelledby="shortcuts">
+        <h2 id="shortcuts">Keyboard shortcuts</h2>
+        <p>Assign positions 1–9 to <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + the number. Use <kbd>0</kbd> for position 10. On Mac, use Command.</p>
+        <button id="configure" type="button">Configure shortcuts in Chrome</button>
+        <p>Shortcuts start unassigned. If a combination is reserved by Chrome or your operating system, choose another.</p>
+        <p>Positions count from the left, including pinned tabs. Moves across the pinned boundary do nothing. If the position exceeds the number of tabs, the last tab is the destination.</p>
+      </section>
+      <footer>Settings stay on this device. No analytics or browsing data collection.</footer>
+    </main>
+  </body>
+</html>
