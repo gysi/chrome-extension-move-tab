@@ -24,6 +24,8 @@ Positions count from the left in the current window, including pinned tabs. A po
 
 Not published yet. After an approved release goes live, add its verified store URL here and to the repository's About website field. Publishing requires testing in Chrome and explicit user approval; see [AGENTS.md](AGENTS.md).
 
+Store screenshots: [Settings](screenshots/settings.png) · [Keyboard shortcuts](screenshots/shortcuts.png).
+
 ## Development and testing
 
 No dependencies or build step. Run `node --test` with Node.js 18+.
