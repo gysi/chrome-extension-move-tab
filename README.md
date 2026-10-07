@@ -37,6 +37,6 @@ Before publishing, load it in Chrome and check:
 - Check saved settings after restarting Chrome, all ten shortcuts, rapid repeated shortcuts, two windows, fewer than ten tabs, pinned tabs, and tab groups.
 - Confirm `chrome://extensions` shows no extension errors, including after the service worker becomes idle.
 
-Create an upload ZIP with `powershell -NoProfile -File scripts/package.ps1`. It runs the tests and packages only the extension, with `manifest.json` at the ZIP root.
+After testing, create an upload ZIP containing only the contents of the `extension` folder, with `manifest.json` at the ZIP root.
 
 Only the `storage` permission is requested. No page access, analytics, external requests, or browsing data collection. See [PRIVACY.md](PRIVACY.md). Report problems through [GitHub Issues](https://github.com/gysi/chrome-extension-move-tab/issues).
